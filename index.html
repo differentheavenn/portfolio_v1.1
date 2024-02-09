@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="tMhieVUvrMu-LatcjSxcHVPTWJp4aY3ULMOr9KRQDPU" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Website personal portfolio Nuki Ari">
+  <meta name="keywords" content="portfolio, Nuki Ari, nukiari">
+  <meta name="author" content="Nuki Ari">
+  <meta name="robots" content="portfolio, Nuki Ari, nukiari">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta property="og:title" content="Nuki Ari">
+  <meta property="og:url" content="https://nukiari.000webhostapp.com/">
+  <title>Nuki Ari | Center</title>
+  <!-- ICON WEB -->
+  <link rel="shortcut icon" href="img/icon_web.png" />
+  <!-- CSS BOOTSTRAP -->
+  <link rel="stylesheet" crossorigin="anonymous" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD">
+  <!-- SWIPER -->
+  <link rel="stylesheet" crossorigin="anonymous" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- DETEKSI BROWSER SUPPORT WEBP ATAU TIDAK -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> -->
+  <!-- CSS NUKI -->
+  <!-- <link rel="stylesheet" type="text/css" href="./css/lightbox.css"> -->
+  <!-- CSS NUKI -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- REMOVE WATERMARK WEBHOSTAPP -->
+  <style>
+    img[alt="www.000webhost.com"] {
+      display: none;
+    }
+  </style>
+
+  <noscript>
+    <style>
+      body,
+      html {
+        overflow: hidden
+      }
+
+      #SpiderBlogging {
+        display: none
+      }
+
+      /* SpiderBlogging Noscript Popup */
+      #SpiderBloggingNoscript {
+        background: rgba(0, 0, 0, 0.85);
+        padding: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: -100px;
+        right: 0;
+        z-index: 5000;
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+      }
+
+      #SpiderBloggingNoscript svg {
+        width: 100px;
+        height: 100px
+      }
+
+      #SpiderBloggingNoscript svg path {
+        fill: #fff
+      }
+
+      #SpiderBloggingNoscript .isiNoscript {
+        background-color: #ff0000;
+        color: #fff;
+        position: absolute;
+        text-align: center;
+        padding: 0 30px 30px 30px;
+        margin: auto;
+        top: 30%;
+        left: 0;
+        right: 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.5em;
+        max-width: 670px;
+        box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.15);
+        border: 15px solid rgba(0, 0, 0, .07);
+        overflow: hidden;
+        transition: all .6s cubic-bezier(.25, .8, .25, 1);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        backface-visibility: visible;
+        transition: all .2s ease-in-out, visibility 0s;
+        transform-origin: bottom center;
+        pointer-events: auto;
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+        opacity: 1;
+        animation: SpiderBloggingWobble .5s;
+        -moz-animation: SpiderBloggingWobble .5s;
+        -webkit-animation: SpiderBloggingWobble .5s;
+        -o-animation: SpiderBloggingWobble .5s
+      }
+
+      #SpiderBloggingNoscript .isiNoscript:hover {
+        box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.2);
+      }
+
+      #SpiderBloggingNoscript .isiNoscript h4,
+      #SpiderBloggingNoscript .isiNoscript .judul {
+        display: inline-block;
+        background: rgba(0, 0, 0, .07);
+        padding: 5px 25px 15px 25px;
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 20px
+      }
+    </style>
+  </noscript>
+
+</head>
+
+<body id="body">
+
+  <!-- LOADER -->
+  <div class="container_loader">
+    <div class="loader">
+      <div class="ring"></div>
+      <div class="ring"></div>
+      <p>Loading...</p>
+      <br>
+      <div class="percentage_loading">
+        <span id="loader_percentage"></span>
+        <!-- <span id="loader_percentage">00 %</span> -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NAVBAR-->
+  <header>
+    <nav class="navbar no_animation fixed-top" id="header">
+      <div class="container">
+        <!-- <a class="logo">Nuki_<span class="logo2">Ari</span></a> -->
+        <a class="logo" href="https://nukiari.000webhostapp.com/">Nuki <span class="logo2">Ari</span></a>
+        <input id="page-nav-toggle" class="main-navigation-toggle" type="checkbox" />
+        <label for="page-nav-toggle">
+          <svg class="icon--menu-toggle hvr-glow" viewBox="0 0 60 30">
+            <g class="icon-group">
+              <g class="icon--menu">
+                <path d="M 6 0 L 54 0" />
+                <path d="M 6 15 L 54 15" />
+                <path d="M 6 30 L 54 30" />
+              </g>
+              <g class="icon--close">
+                <path d="M 15 0 L 45 30" />
+                <path d="M 15 30 L 45 0" />
+              </g>
+            </g>
+          </svg>
+        </label>
+        <!-- main -->
+        <nav class="main-navigation">
+          <ul class="menu">
+            <!-- blur menu <ul class="bmenu"> -->
+            <li class="hvr-skew-forward"><a href="#space_container" class="menu-link">HOME</a></li>
+            <li class="hvr-skew-forward"><a href="#about" class="menu-link">ABOUT</a></li>
+            <li class="hvr-skew-forward"><a href="#skills" class="menu-link">SKILLS SET</a></li>
+            <li class="hvr-skew-forward"><a href="#project" class="menu-link">PROJECT</a></li>
+            <li class="hvr-skew-forward"><a href="#gallery" class="menu-link">GALLERY</a></li>
+            <li class="hvr-skew-forward"><a href="#contact" class="menu-link">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- HOME -->
+  <main id="sections" class="no_animation">
+
+    <section class="section wrapper" id="space_container">
+      <!-- CARD TENGAH -->
+      <div class="container_card_profile">
+        <div class="card_profile ">
+          <div id="hidewhenscroll2" class="card_profile-img-container object" data-value="0.5">
+            <picture class="card_profile-img hvr_img ">
+              <!-- Menggunakan source untuk gambar WebP jika didukung -->
+              <source srcset="./img/profile_home.webp" type="image/webp">
+              <!-- Fallback ke gambar PNG jika browser tidak mendukung WebP -->
+              <img src="./img/profile_home.png" alt="Gambar Nuki" loading="eager">
+            </picture>
+
+          </div>
+          <div class="card_profile-body">
+            <p id="opening">
+              "A simple Portfolio that will guide you to get know me at a glance."
+              <br>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SVG PLANET -->
+      <div id="hidewhenscroll" class="hide_home">
+        <div id="hide_to_optimize" class="text3d">
+          <div id="text_welcome" class="text_welcome object" data-value="4">
+            <p>
+              <span class="blur-onleave" style="font-style: normal;">N</span><span class="blur-onleave">U</span><span
+                class="blur-onleave">K</span><span class="blur-onleave">i</span>
+            </p>
+          </div>
+          <div id="text_welcome2" class="text_welcome2 object" data-value="4">
+            <p>
+              <span class="blur-onleave" style="font-style: normal;">A</span><span class="blur-onleave">R</span><span
+                class="blur-onleave">i</span><span class="blur-onleave"
+                style="font-style: normal; color: #ffa500;">★</span>
+            </p>
+          </div>
+        </div>
+
+        <picture class="cloud2 object text_welcome">
+          <!-- Menggunakan source untuk gambar WebP jika didukung -->
+          <source srcset="./img/cloud2.webp" type="image/webp">
+          <!-- Fallback ke gambar PNG jika browser tidak mendukung WebP -->
+          <img src="./img/cloud2.png" alt="Gambar awan atas" loading="eager">
+        </picture>
+        <picture class="cloud3 object text_welcome2">
+          <!-- Menggunakan source untuk gambar WebP jika didukung -->
+          <source srcset="./img/cloud3.webp" type="image/webp">
+          <!-- Fallback ke gambar PNG jika browser tidak mendukung WebP -->
+          <img src="./img/cloud3.png" alt="Gambar awan bawah" loading="eager">
+        </picture>
+      </div>
+      <!-- END SVG -->
+
+    </section>
+  </main>
+
+  <section>
+    <div class="horizontal-scroll-section">
+      <div class="scene">
+
+        <div class="marquee-kekanan second no_animation" id="marquee-kanan">
+          <div class="track text-black">
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+            <span class="marquee-text-kanan">About me&nbsp;</span><span class="marquee-text-kanan">About me&nbsp;</span>
+          </div>
+        </div>
+
+        <div class="marquee-kekiri second no_animation" id="marquee-kiri">
+          <div class="track text-black">
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+            <span class="marquee-text-kiri">About me&nbsp;</span><span class="marquee-text-kiri">About me&nbsp;</span>
+          </div>
+        </div>
+
+        <div class="horizontal-scroll-section__content-wrapper wrapper no_animation">
+
+          <!-- ABOUT -->
+          <div id="about" class="horizontal-scroll-section__content-section no_animation">
+
+            <div class="horizontal-scroll-section__image-one">
+              <div class="container container_about_blur ">
+                <div class="col-lg-12 z-6">
+                  <h2 class="colstyle title-about"><span class="title-about-number"> 01</span> About Me</h2>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 font_responsive ">
+                    <p>Born in Klaten in 2001, Im based graduate S1 informatics engineering who has a strong passion for
+                      art, particularly in programming,
+                      video editing, and image manipulation. Currently, I am focus on becoming a front-end web
+                      developer.
+                      Alongside my web development skills, I also possess expertise in video and audio production. <br>
+                      Overall, I am a creative individual who enjoys merging technology and art to create captivating
+                      visual experiences.
+                      I am dedicated to honing my craft and pushing the boundaries of my knowledge to bring innovative
+                      ideas to life.
+                    </p>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="gallery__img grid">
+                      <div class="gallery__overlay gambar_1_about ">
+                        <picture class="gallery__img-one hvr_img">
+                          <!-- Menggunakan source untuk gambar WebP jika didukung -->
+                          <source srcset="./img/gallery-2-sq.webp" type="image/webp">
+                          <!-- Fallback ke gambar PNG jika browser tidak mendukung WebP -->
+                          <img src="./img/gallery-2-sq.jpg" alt="Gambar about atas" loading="lazy">
+                        </picture>
+                      </div>
+
+                      <div class="gallery__overlay gambar_2_about">
+                        <picture class="gallery__img-one hvr_img">
+                          <!-- Menggunakan source untuk gambar WebP jika didukung -->
+                          <source srcset="./img/gallery-1-sq.webp" type="image/webp">
+                          <!-- Fallback ke gambar PNG jika browser tidak mendukung WebP -->
+                          <img src="./img/gallery-1-sq.jpg" alt="Gambar about bawah" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div id="slot_1" class="horizontal-scroll-section__content-section_responsive">
+            <!-- <h1 class="reveal_about gambar_4_about">Visionary</h1> -->
+            <video controls autoplay loop class="video_horizontal">
+              <source src="video/before after 1.mp4" type="video/mp4">Sorry, your browser does not support video
+              playback.
+            </video>
+            <!-- <h1 class="reveal_about gambar_3_about">Mastermind</h1> -->
+          </div>
+
+          <div id="slot_2" class="horizontal-scroll-section__content-section_responsive">
+            <!-- <h1 class="reveal_about gambar_6_about">Offbeat</h1> -->
+            <video controls autoplay loop class="video_vertical">
+              <source src="video/before after 2.mp4" type="video/mp4">Sorry, your browser does not support video
+              playback.
+            </video>
+            <!-- <h1 class="reveal_about gambar_5_about">Eclectic</h1> -->
+          </div>
+
+        </div>
+      </div>
+      <div>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <div id="skills" class="wrapper">
+      <div id="container_skills_blur">
+        <div class="col-lg-12">
+          <h2 class="colstyle title-skills"><span class="title-skills-number"> 02</span> Skills Set</h2>
+        </div>
+
+        <div class="row">
+          <p class="col-md-6 font_responsive">I love technology, and it has become an important part of my life.
+            However, art has always held a special place in my heart, shaping almost half of my experiences. Here are
+            some my skills
+            about programming and skill of art that I have.
+          </p>
+          <div class="col-md-6 skills font_responsive">
+            <div class="htmlProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/html_css.png" class="logo_skill" alt="Logo HTML"
+                    loading="lazy">&nbsp;HTML, CSS</p>
+              </div>
+            </div>
+
+            <div class="cssProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/php.png" class="logo_skill" alt="Logo PHP"
+                    loading="lazy">&nbsp;PHP</p>
+              </div>
+            </div>
+
+            <div class="jsProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/javascript.png" class="logo_skill" alt="Logo JAVASCRIPT"
+                    loading="lazy">&nbsp;JavaScript</p>
+              </div>
+            </div>
+
+            <div class="javaProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/kotlin.png" class="logo_skill" alt="Logo Kotlin"
+                    loading="lazy">&nbsp;Kotlin</p>
+              </div>
+            </div>
+
+            <div class="c/c++Prog ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/c++.png" class="logo_skill" alt="Logo C++"
+                    loading="lazy">&nbsp;C++</p>
+              </div>
+            </div>
+
+            <div class="nodeProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/sql.png" class="logo_skill" alt="Logo SQL"
+                    loading="lazy">&nbsp;Sql</p>
+              </div>
+            </div>
+
+            <!-- APPLICATION -->
+            <div class="nodeProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/sonyvegas.png" class="logo_skill" alt="Logo SonyVegas"
+                    loading="lazy">&nbsp;SonyVegas</p>
+              </div>
+            </div>
+
+            <div class="nodeProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/fl_studio.png" class="logo_skill" alt="Logo Fl Studio"
+                    loading="lazy">&nbsp;Fl Studio</p>
+              </div>
+            </div>
+
+            <div class="nodeProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/lightroom.png" class="logo_skill" alt="Logo Lightroom"
+                    loading="lazy">&nbsp;Lightroom</p>
+              </div>
+            </div>
+
+            <div class="nodeProg ProgWidth">
+              <div class="skill_name">
+                <p class="skill_name"><img src="img/logo_skill/picsay.png" class="logo_skill" alt="Logo Picsay"
+                    loading="lazy">&nbsp;Picsay</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- PROJECT -->
+  <section>
+    <div id="project" class="wrapper">
+      <div class="col-lg-12">
+        <h2 class="colstyle title-project"><span class="title-project-number"> 03</span> Project</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p class="font_responsive">Every line of code is a stroke of genius, every design element a brushstroke of
+            elegance.
+            With every project, I strive not just to meet expectations, but to transcend them.
+            The user interfaces are more than mere layouts - they're gateways to intuitive exploration.
+            The user experiences are carefully choreographed dances of engagement and delight.
+          </p>
+        </div>
+
+        <div class="col-md-6 project">
+          <div class="swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                  <div class="slide-content">
+                    <img src="gallery_section/klatensche.jpg" alt="Image">
+                    <p>Create a coffee shop website</p>
+                    <p>This website have features purchase recording functionality, as well as the capability to
+                      calculate daily, monthly, and even yearly revenue.</p>
+                    <div class="btn btn_visit">
+                      <a target="_blank" a href="https://klatensche.000webhostapp.com/">
+                        <button type="button" class="btn btn-warning">Visit
+                          <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                  <div class="slide-content">
+                    <img src="gallery_section/quiz app.jpg" alt="Image">
+                    <p>Create a quiz app with android</p>
+                    <p>Creating a landing page designed for teachers to generate questions, followed by an Android
+                      application intended for students to practice and complete these exercises.</p>
+                    <div class="btn btn_visit">
+                      <a target="_blank" a href="https://skripsinuki.000webhostapp.com/">
+                        <button type="button" class="btn btn-warning">Visit
+                          <i class="fa-solid fa-arrow-right fa-beat-fade"></i>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-button-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+              </svg>
+
+            </div>
+            <div class="swiper-button-next">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
+                class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+              </svg>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <div id="gallery"></div>
+  <!-- GALLERY ON LAPTOP-->
+  <section id="gallery_laptop">
+    <div class="container_gallery_blur">
+      <div class="col-lg-12">
+        <h2 class="colstyle title-gallery_project"><span class="title-gallery_project-number"> 04</span> Gallery</h2>
+      </div>
+      <div class="row">
+        <div class="font_responsive">
+          <p>Step into the captivating world IT, where creativity and innovation collide. This gallery showcases the
+            vibrant
+            of memories, projects, and achievements that have shaped my journey in the tech realm. <br>
+            Each frame in this digital exhibit tells a unique, Wander through the mesmerizing visuals that encapsulate
+            the diverse
+            range of projects I've undertaken.
+          </p>
+        </div>
+      </div>
+      <h1 class="text_scroll_down">Scroll Down</h1>
+    </div>
+
+    <div class="container_icon_scrolldown">
+      <span class="circle_icon_scrolldown">
+        <i class="fa fa-arrow-down"></i>
+      </span>
+      <span class="pulse_icon_scrolldown"></span>
+    </div>
+
+    <div id="scrollDist"></div>
+
+    <div id="app">
+      <div id="imgGroup">
+        <img src="gallery_section/sheikh zayed solo.jpg" data-x="300" data-y="0" alt="sheikh zayed solo">
+        <img src="gallery_section/uty.jpg" data-x="100" data-y="-200" alt="uty">
+        <img src="gallery_section/sch.jpg" data-x="-100" data-y="-150" alt="sch">
+        <img src="gallery_section/sepatu.jpg" data-x="-300" data-y="50" alt="sepatu">
+        <img src="gallery_section/plaza.jpg" data-x="300" data-y="-10" alt="plaza">
+        <img src="gallery_section/cpc art.jpg" data-x="-300" data-y="-200" alt="cpc art">
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY ON MOBILE-->
+  <section id="gallery_mobile">
+    <div class="container_gallery_blur">
+      <div class="col-lg-12">
+        <h2 class="colstyle title-gallery_project"><span class="title-gallery_project-number"> 04</span> Gallery</h2>
+      </div>
+      <div class="row" style="justify-content:  space-evenly;">
+        <div class="col-md-6 font_responsive">
+          <p>Step into the captivating world IT, where creativity and innovation collide. This gallery showcases the
+            vibrant
+            of memories, projects, and achievements that have shaped my journey in the tech realm. <br>
+            Each frame in this digital exhibit tells a unique, Wander through the mesmerizing visuals that encapsulate
+            the diverse
+            range of projects I've undertaken.
+          </p>
+        </div>
+
+        <div class="col-md-6" style="padding: 0px;">
+          <div class="swiper-container">
+            <div class="swiper_gallery_mobile">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide swiper-slide_img" style="box-shadow: none;">
+                  <div class="slide-content">
+                    <a href="gallery_section/cpc art.jpg" data-lightbox="image_gallery" data-title="Cpc Art"
+                      style="text-decoration: none;">
+                      <img src="gallery_section/cpc art.jpg" alt="Cpc Art">
+                      <br><br>
+                      <button class="btn btn-secondary zoom-button">Zoom <i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_img" style="box-shadow: none;">
+                  <div class="slide-content">
+                    <a href="gallery_section/plaza.jpg" data-lightbox="image_gallery" data-title="Ambarrukmo Plaza"
+                      style="text-decoration: none;">
+                      <img src="gallery_section/plaza.jpg" alt="Ambarrukmo Plaza">
+                      <br><br>
+                      <button class="btn btn-secondary zoom-button">Zoom <i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_img" style="box-shadow: none;">
+                  <div class="slide-content">
+                    <a href="gallery_section/sch.jpg" data-lightbox="image_gallery" data-title="Sleman City Hall"
+                      style="text-decoration: none;">
+                      <img src="gallery_section/sch.jpg" alt="Sleman City Hall">
+                      <br><br>
+                      <button class="btn btn-secondary zoom-button">Zoom <i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_img" style="box-shadow: none;">
+                  <div class="slide-content">
+                    <a href="gallery_section/sheikh zayed solo.jpg" data-lightbox="image_gallery"
+                      data-title="Sheikh zayed solo" style="text-decoration: none;">
+                      <img src="gallery_section/sheikh zayed solo.jpg" alt="Sheikh zayed solo">
+                      <br><br>
+                      <button class="btn btn-secondary zoom-button">Zoom <i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_img" style="box-shadow: none;">
+                  <div class="slide-content">
+                    <a href="gallery_section/sepatu.jpg" data-lightbox="image_gallery" data-title="Afternoon Converse"
+                      style="text-decoration: none;">
+                      <img src="gallery_section/sepatu.jpg" alt="Afternoon Converse">
+                      <br><br>
+                      <button class="btn btn-secondary zoom-button">Zoom <i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide_img" style="box-shadow: none;">
+                  <div class="slide-content">
+                    <a href="gallery_section/uty.jpg" data-lightbox="image_gallery"
+                      data-title="Universitas Teknologi Yogyakarta" style="text-decoration: none;">
+                      <img src="gallery_section/uty.jpg" alt="Universitas Teknologi Yogyakarta">
+                      <br><br>
+                      <button class="btn btn-secondary zoom-button">Zoom <i
+                          class="fa-solid fa-magnifying-glass"></i></button>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-prev_mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+          </svg>
+        </div>
+        <div class="swiper-button-next_mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+          </svg>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT ME -->
+  <section>
+    <div id="contact" class="wrapper">
+      <div class="container_contact_blur">
+        <div class="col-lg-12">
+          <h2 class="colstyle title-contact"><span class="title-contact-number"> 05</span> Contact Me</h2>
+        </div>
+
+        <div class="row no_animation">
+          <p class="col-sm-5 col-md-6 font_responsive">Welcome to the gateway of connection, where the threads of
+            communication converge,
+            If you have any questions or just tell me something, let this button deliver you.
+          </p>
+          <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 font_responsive tombol_sosmed">
+
+            <!-- <p class="font_responsive">Click here</p> -->
+            <div class="navigation_contact">
+              <div class="menuToggle_contact"></div>
+              <div class="menu_contact">
+
+                <ul class="icon_sosmed ">
+                  <li style="--i:0.1s">
+                    <a href="https://www.instagram.com/nukiarii_" target="_blank">
+                      <i title="Instagram" class="fa-brands fa-instagram instagram_icon"></i>
+                    </a>
+                  </li>
+                  <li style="--i:0.2s">
+                    <a href="mailto:nukiiariiwibowoo@gmail.com" target="_blank">
+                      <i title="gmail" class="fa-solid fa-envelope" style="color: #0072b1"></i>
+                    </a>
+                  </li>
+                  <li style="--i:0.3s">
+                    <a href="https://www.linkedin.com/in/nuki-ari-6501aa285/" target="_blank">
+                      <i title="CodePen" class="fa-brands fa-linkedin"" style=" color: #0072b1;"></i>
+                    </a>
+                  </li>
+                  <!-- <li style="--i:0.4s">
+                              <a href="https://www.instagram.com/nukiarii_" target="_blank">
+                                <i title="Instagram" class="fa-brands fa-instagram" style="color:purple"></i>
+                              </a>
+                            </li> -->
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center font_responsive footer">
+    <p>© 2023 Nuki <span style="color: #ffa500; font-style: italic;">Ari</span> | All rights reserved</p>
+  </footer>
+
+  <!-- Tambahkan elemen div dengan id "screensaver" -->
+  <div class="fs-4" id="screensaver">
+    <div>
+      <p class="title_ss">NUKI ARI'S SAVING MODE
+        <br>
+        <span class="description_ss">
+          This screen consumes <span style="font-style: italic;">less energy</span>, clicking or scrolling to exit from
+          this screen.
+      </p>
+      </span>
+      </p>
+    </div>
+  </div>
+
+  <!-- PROGRESS BAR ON SCROLL -->
+  <div id="hide_on_mobile">
+    <div id="percentage_dan_bar">
+      <!-- PROGRESS BAR -->
+      <div id="progressbar">
+        <!-- <progress id="progressbar" min="0" max="100" value="0"></progress> -->
+      </div>
+      <!-- PERCENTAGE NUMBER -->
+      <div data-scrollPercentage style="display: none;">
+        <div class="percentage">&nbsp;</div>
+      </div>
+      <div id="percentage-value">0%</div>
+    </div>
+  </div>
+
+  <!-- ARROW KE ATAS  -->
+  <div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+
+  <!-- JQUERY -->
+  <!-- <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- SMOOTHSCROLL -->
+  <!-- <script eager src="./javascript/SmoothScroll.js"></script> -->
+  <!--  JAVASCRIPT VERTICAL HORIZONTAL SCROLL-->
+  <script src="./javascript/horizontal-vertical-scroll.js"></script>
+  <!-- JAVASCRIPT ZOOM ELEMENT -->
+  <script src="./javascript/zoom_element.js"></script>
+  <!-- JAVASCRIPT BOOTSTRAP -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- FLYING GALLERY -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"
+    crossorigin="anonymous"></script>
+  <script defer src="./javascript/flying_image.js"></script>
+  <!-- SWIPER -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" crossorigin="anonymous"></script>
+  <!-- JAVASCTIPT FONTAWESOME -->
+  <script defer src="https://kit.fontawesome.com/12642bc27d.js" crossorigin="anonymous"></script>
+  <!-- BUNDLE NUKI -->
+  <script src="./javascript/lightbox.js"></script>
+  <!-- BUNDLE NUKI -->
+  <script src="./javascript/bundle_nuki.js"></script>
+
+</body>
+<noscript>
+  <style>
+    body,
+    html {
+      overflow: hidden
+    }
+
+    #SpiderBlogging {
+      display: none
+    }
+
+    /* SpiderBlogging Noscript Popup */
+    #SpiderBloggingNoscript {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      top: -100px;
+      right: 0;
+      z-index: 5000;
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+    }
+
+    #SpiderBloggingNoscript svg {
+      width: 100px;
+      height: 100px
+    }
+
+    #SpiderBloggingNoscript svg path {
+      fill: #fff
+    }
+
+    #SpiderBloggingNoscript .isiNoscript {
+      background-color: #ff0000;
+      color: #fff;
+      position: absolute;
+      text-align: center;
+      padding: 0 30px 30px 30px;
+      margin: auto;
+      top: 30%;
+      left: 0;
+      right: 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+      line-height: 1.5em;
+      max-width: 670px;
+      box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.15);
+      border: 15px solid rgba(0, 0, 0, .07);
+      overflow: hidden;
+      transition: all .6s cubic-bezier(.25, .8, .25, 1);
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      backface-visibility: visible;
+      transition: all .2s ease-in-out, visibility 0s;
+      transform-origin: bottom center;
+      pointer-events: auto;
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+      opacity: 1;
+      animation: SpiderBloggingWobble .5s;
+      -moz-animation: SpiderBloggingWobble .5s;
+      -webkit-animation: SpiderBloggingWobble .5s;
+      -o-animation: SpiderBloggingWobble .5s
+    }
+
+    #SpiderBloggingNoscript .isiNoscript:hover {
+      box-shadow: 0 20px 10px -10px rgba(0, 0, 0, 0.2);
+    }
+
+    #SpiderBloggingNoscript .isiNoscript h4,
+    #SpiderBloggingNoscript .isiNoscript .judul {
+      display: inline-block;
+      background: rgba(0, 0, 0, .07);
+      padding: 5px 25px 15px 25px;
+      font-size: 2.2rem;
+      font-weight: 500;
+      margin-bottom: 20px
+    }
+  </style>
+</noscript>
+
+</html>

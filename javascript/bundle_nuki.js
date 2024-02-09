@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const loader = document.querySelector("#loader_percentage");
 const elementsToLoad = document.querySelectorAll(
   "script, link[rel='stylesheet'], img, video, font"

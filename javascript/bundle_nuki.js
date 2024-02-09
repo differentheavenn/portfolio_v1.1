@@ -34,9 +34,9 @@ elementsToLoad.forEach((element) => {
 function updateLoader() {
   const percentage = Math.round((loadedCount / totalCount) * 100);
   loader.textContent = `${percentage} %`;
-  if (percentage >= 1) {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
+  // if (percentage >= 1) {
+  //   window.scrollTo({ top: 0, behavior: "smooth" });
+  // }
   // if (percentage >= 100) {
   //   // Loading selesai, Anda dapat menambahkan logika lain di sini
   //   // console.log("Loading selesai!");

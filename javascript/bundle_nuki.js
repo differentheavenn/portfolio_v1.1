@@ -94,7 +94,7 @@ window.addEventListener("DOMContentLoaded", function () {
   checkScreenSize();
   window.addEventListener('resize', function() {
     checkScreenSize();
-    location.reload();
+    // location.reload();
   });
 
   /*🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪*/

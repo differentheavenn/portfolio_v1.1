@@ -132,7 +132,7 @@
       <p>Loading...</p>
       <br>
       <div class="percentage_loading">
-        <span id="loader_percentage"></span>
+        <span id="loader_percentage">0%</span>
         <!-- <span id="loader_percentage">00 %</span> -->
       </div>
     </div>
@@ -179,8 +179,7 @@
   </header>
 
   <!-- HOME -->
-  <main id="sections" class="no_animation">
-
+  <main id="view_desktop" class="no_animation">
     <section class="section wrapper" id="space_container">
       <!-- CARD TENGAH -->
       <div class="container_card_profile">
@@ -202,7 +201,6 @@
           </div>
         </div>
       </div>
-
       <!-- SVG PLANET -->
       <div id="hidewhenscroll" class="hide_home">
         <div id="hide_to_optimize" class="text3d">
@@ -235,9 +233,23 @@
         </picture>
       </div>
       <!-- END SVG -->
-
     </section>
   </main>
+
+  <main id="view_mobile" class="no_animation">
+    <section class="section wrapper">
+      <div class="row" style="min-height: 100vh; max-height: 100vh;">
+        <div class="col-sm-4" style="color: #282a35; ; background-color: white;">
+          <h1 class="text_welcome_mobile">NUKI <br> ARI</h1>
+        </div>
+        <div class="col-sm-8" style="background-color: #464646; display: flex;">
+          <h1 style=" color: white; padding-left: 5vw; padding-top: 5vh;">A simple Portfolio that will guide you to get know me at a glance.</h1>
+          <img src="./img/profile_home.png" alt="Gambar Nuki" loading="eager" class="image_profile_mobile">
+        </div>
+      </div>
+    </section>
+  </main>
+  
 
   <section>
     <div class="horizontal-scroll-section">
@@ -437,10 +449,7 @@
         </div>
       </div>
     </div>
-
-    </div>
   </section>
-
 
   <!-- PROJECT -->
   <section>
